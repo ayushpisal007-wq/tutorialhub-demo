@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Tutorial</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="./image/Logo/favicon.png">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./fontawesome/fontawesome-free-7.1.0-web/css/all.min.css">
+  
+</head>
+<body>
+
+    <!-- ================= Top Navbar ================= -->
+    <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="#"><img src="./image/Logo/favicon.png" alt="image Not Found..!"> Skills IT
+                Academy....!</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#topMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="topMenu">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+
+                </ul>
+                    <a href="Login.html" class="btn green">SignIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Scrollable Subject Navbar ================= -->
+    <div class="subject-navbar">
+
+        <button class="scroll-btn left-btn" onclick="scrollLeftMenu()">❮</button>
+
+        <div class="subject-container" id="subjectMenu">
+
+            <a href="html.html" class="subject-link">HTML</a>
+            <a href="css.html" class="subject-link">CSS</a>
+            <a href="JavaScript.html" class="subject-link">JAVASCRIPT</a>
+            <a href="sql.html" class="subject-link">SQL</a>
+            <a href="python.html" class="subject-link">PYTHON</a>
+            <a href="java.html" class="subject-link">JAVA</a>
+            <a href="php.html" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+            <a href="#" class="subject-link">JAVA</a>
+            <a href="#" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+
+        </div>
+
+        <button class="scroll-btn right-btn" onclick="scrollRightMenu()">❯</button>
+    </div>
+
+
+<div class="main-layout">
+    <div class="sideber">
+        <h5>CSS Tutorial</h5>
+
+        <button class="dropdown-btn">CSS Tutorial &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('home')">CSS Tutorial</a>
+            <a onclick="showSection('intro')">CSS Introduction</a>
+            <a onclick="showSection('output')">CSS Colors</a>
+        </div>
+
+        <button class="dropdown-btn">CSS Syntax &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('syntax')">CSS Syntax</a>
+        </div>
+
+        <button class="dropdown-btn">CSS Selectors &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('variables')">CSS Selectors</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Home -->
+        <div id="home" class="section active">
+            <h1>CSS Tutorial</h1>
+            <p>
+                CSS stands for Cascading Style Sheets. It is used to style and layout
+                web pages, for example to change colors, fonts, spacing, and create
+                responsive designs. CSS works together with HTML to make websites
+                visually attractive.
+            </p>
+            <a href="https://www.w3schools.com/css/" target="_blank">
+                Learn Full CSS Tutorial – W3Schools
+            </a>
+        </div>
+
+        <!-- Introduction -->
+        <div id="intro" class="section">
+            <h1>CSS Introduction</h1>
+            <p>
+                CSS describes how HTML elements should be displayed on screen.
+                It allows developers to separate content from design, making
+                websites easier to maintain and faster to load.
+            </p>
+            <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">
+                Read CSS Introduction – W3Schools
+            </a>
+        </div>
+
+        <!-- Colors -->
+        <div id="output" class="section">
+            <h1>CSS Colors</h1>
+            <p>
+                CSS allows you to apply colors using color names, HEX values,
+                RGB, RGBA, HSL and more. Colors can be applied to text,
+                backgrounds, borders and shadows.
+            </p>
+            <a href="https://www.w3schools.com/css/css_colors.asp" target="_blank">
+                Learn CSS Colors – W3Schools
+            </a>
+        </div>
+
+        <!-- Syntax -->
+        <div id="syntax" class="section">
+            <h1>CSS Syntax</h1>
+            <p>
+                A CSS rule consists of a selector and a declaration block.
+                Example:
+                selector { property: value; }
+                This structure defines how styles are applied to HTML elements.
+            </p>
+            <a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">
+                Learn CSS Syntax – W3Schools
+            </a>
+        </div>
+
+        <!-- Selectors -->
+        <div id="variables" class="section">
+            <h1>CSS Selectors</h1>
+            <p>
+                CSS selectors are used to target HTML elements.
+                Common selectors include class selectors, id selectors,
+                element selectors and group selectors.
+            </p>
+            <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">
+                Learn CSS Selectors – W3Schools
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+ <footer class="footer">
+        <div class="footer-top-links">
+            <a href="#">PLUS</a>
+            <a href="#">SPACES</a>
+            <a href="#">GET CERTIFIED</a>
+            <a href="#">FOR TEACHERS</a>
+            <a href="#">BOOTSCAMPS</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/skills-it-academy/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-bottom">
+        <p>
+            Skills IT Academy is optimized for learning and training.
+            &copy; Skills IT Academy. All Right Resrved.
+        </p>
+        </div>
+    </footer>
+
+<script src="./style.js"></script>
+</body>
+</html>

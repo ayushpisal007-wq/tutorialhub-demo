@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SQL Tutorial</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="./image/Logo/favicon.png">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./fontawesome/fontawesome-free-7.1.0-web/css/all.min.css">
+  
+</head>
+<body>
+
+    <!-- ================= Top Navbar ================= -->
+    <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="#"><img src="./image/Logo/favicon.png" alt="image Not Found..!"> Skills IT
+                Academy....!</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#topMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="topMenu">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+
+                </ul>
+                    <a href="Login.html" class="btn green">SignIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Scrollable Subject Navbar ================= -->
+    <div class="subject-navbar">
+
+        <button class="scroll-btn left-btn" onclick="scrollLeftMenu()">❮</button>
+
+        <div class="subject-container" id="subjectMenu">
+
+            <a href="html.html" class="subject-link">HTML</a>
+            <a href="css.html" class="subject-link">CSS</a>
+            <a href="JavaScript.html" class="subject-link">JAVASCRIPT</a>
+            <a href="sql.html" class="subject-link">SQL</a>
+            <a href="python.html" class="subject-link">PYTHON</a>
+            <a href="java.html" class="subject-link">JAVA</a>
+            <a href="php.html" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+            <a href="#" class="subject-link">JAVA</a>
+            <a href="#" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+
+        </div>
+
+        <button class="scroll-btn right-btn" onclick="scrollRightMenu()">❯</button>
+    </div>
+
+
+<div class="main-layout">
+    <div class="sideber">
+        <h5>Basic SQL</h5>
+
+        <button class="dropdown-btn">SQL Tutorial &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('home')">SQL Tutorial</a>
+            <a onclick="showSection('intro')">SQL Introduction</a>
+            <a onclick="showSection('output')">SQL SELECT</a>
+        </div>
+
+        <button class="dropdown-btn">SQL Syntax &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('syntax')">SQL Syntax</a>
+        </div>
+
+        <button class="dropdown-btn">SQL Commands &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('variables')">SQL WHERE</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Home -->
+        <div id="home" class="section active">
+            <h1>SQL Tutorial</h1>
+            <p>
+                SQL stands for Structured Query Language. It is used to manage
+                and manipulate databases. SQL allows you to create tables,
+                insert data, update records, and retrieve information efficiently.
+            </p>
+            <a href="https://www.w3schools.com/sql/" target="_blank">
+                Learn Full SQL Tutorial – W3Schools
+            </a>
+        </div>
+
+        <!-- Introduction -->
+        <div id="intro" class="section">
+            <h1>SQL Introduction</h1>
+            <p>
+                SQL is used in relational databases like MySQL, Oracle,
+                PostgreSQL and SQL Server. It helps developers store,
+                retrieve and manage structured data using simple commands.
+            </p>
+            <a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">
+                Read SQL Introduction – W3Schools
+            </a>
+        </div>
+
+        <!-- SELECT -->
+        <div id="output" class="section">
+            <h1>SQL SELECT Statement</h1>
+            <p>
+                The SELECT statement is used to retrieve data from a database.
+                Example:
+                SELECT * FROM Students;
+                This command fetches all records from the Students table.
+            </p>
+            <a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">
+                Learn SQL SELECT – W3Schools
+            </a>
+        </div>
+
+        <!-- Syntax -->
+        <div id="syntax" class="section">
+            <h1>SQL Syntax</h1>
+            <p>
+                SQL syntax defines how queries are written. Keywords like
+                SELECT, FROM, WHERE, INSERT, UPDATE and DELETE are used
+                to interact with database tables.
+            </p>
+            <a href="https://www.w3schools.com/sql/sql_syntax.asp" target="_blank">
+                Learn SQL Syntax – W3Schools
+            </a>
+        </div>
+
+        <!-- WHERE -->
+        <div id="variables" class="section">
+            <h1>SQL WHERE Clause</h1>
+            <p>
+                The WHERE clause filters records based on conditions.
+                Example:
+                SELECT * FROM Students WHERE age > 18;
+                This returns only records matching the condition.
+            </p>
+            <a href="https://www.w3schools.com/sql/sql_where.asp" target="_blank">
+                Learn SQL WHERE – W3Schools
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+ <footer class="footer">
+        <div class="footer-top-links">
+            <a href="#">PLUS</a>
+            <a href="#">SPACES</a>
+            <a href="#">GET CERTIFIED</a>
+            <a href="#">FOR TEACHERS</a>
+            <a href="#">BOOTSCAMPS</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/skills-it-academy/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-bottom">
+        <p>
+            Skills IT Academy is optimized for learning and training.
+            &copy; Skills IT Academy. All Right Resrved.
+        </p>
+        </div>
+    </footer>
+
+<script src="./style.js"></script>
+</body>
+</html>

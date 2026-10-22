@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PHP Tutorial</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="./image/Logo/favicon.png">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./fontawesome/fontawesome-free-7.1.0-web/css/all.min.css">
+  
+</head>
+<body>
+
+    <!-- ================= Top Navbar ================= -->
+    <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="#"><img src="./image/Logo/favicon.png" alt="image Not Found..!"> Skills IT
+                Academy....!</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#topMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="topMenu">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+
+                </ul>
+                    <a href="Login.html" class="btn green">SignIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Scrollable Subject Navbar ================= -->
+    <div class="subject-navbar">
+
+        <button class="scroll-btn left-btn" onclick="scrollLeftMenu()">❮</button>
+
+        <div class="subject-container" id="subjectMenu">
+
+            <a href="html.html" class="subject-link">HTML</a>
+            <a href="css.html" class="subject-link">CSS</a>
+            <a href="JavaScript.html" class="subject-link">JAVASCRIPT</a>
+            <a href="sql.html" class="subject-link">SQL</a>
+            <a href="python.html" class="subject-link">PYTHON</a>
+            <a href="java.html" class="subject-link">JAVA</a>
+            <a href="php.html" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+            <a href="#" class="subject-link">JAVA</a>
+            <a href="#" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+
+        </div>
+
+        <button class="scroll-btn right-btn" onclick="scrollRightMenu()">❯</button>
+    </div>
+
+
+<div class="main-layout">
+    <div class="sideber">
+        <h5>Basic PHP</h5>
+
+        <button class="dropdown-btn">PHP Tutorial &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('home')">PHP Tutorial</a>
+            <a onclick="showSection('intro')">PHP Introduction</a>
+            <a onclick="showSection('output')">PHP Echo</a>
+        </div>
+
+        <button class="dropdown-btn">PHP Syntax &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('syntax')">PHP Syntax</a>
+        </div>
+
+        <button class="dropdown-btn">PHP Variables &#x25BC;</button>
+        <div class="dropdown-container">
+            <a onclick="showSection('variables')">PHP Variables</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Home -->
+        <div id="home" class="section active">
+            <h1>PHP Tutorial</h1>
+            <p>
+                PHP is a popular server-side scripting language used to build
+                dynamic and interactive web applications. It runs on the server
+                and is commonly used with databases like MySQL.
+            </p>
+            <a href="https://www.w3schools.com/php/" target="_blank">
+                Learn Full PHP Tutorial – W3Schools
+            </a>
+        </div>
+
+        <!-- Introduction -->
+        <div id="intro" class="section">
+            <h1>PHP Introduction</h1>
+            <p>
+                PHP stands for Hypertext Preprocessor. It is widely used in web
+                development to handle form data, sessions, file uploads and
+                database interactions.
+            </p>
+            <a href="https://www.w3schools.com/php/php_intro.asp" target="_blank">
+                Read PHP Introduction – W3Schools
+            </a>
+        </div>
+
+        <!-- Echo -->
+        <div id="output" class="section">
+            <h1>PHP Echo Statement</h1>
+            <p>
+                The echo statement is used to outp
